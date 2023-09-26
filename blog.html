@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-8 my-3">
+    <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" checked="checked" /> 
+          <div class="collapse-title text-xl font-medium">
+            Scope of `var`, `let`, and `const`
+          </div>
+          <div class="collapse-content"> 
+            <p><pre>
+                <span class="font-extrabold">Var:</span> var variables are function-scoped, meaning they are visible and accessible within the function in which they are declared,
+                regardless of block scope.
+
+                <span class="font-extrabold">Var:</span> let variables are block-scoped, which means they are only accessible within the block (curly braces) in which they are defined.
+
+                <span class="font-extrabold">Var:</span> Variables declared with const are hoisted but, similar to let, are not initialized until the actual declaration statement is encountered.              
+            </pre></p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" /> 
+          <div class="collapse-title text-xl font-medium">
+            Use cases of `null` and `undefined`
+          </div>
+          <div class="collapse-content"> 
+            <p><pre>
+                Null:null is a special value in JavaScript that represents the intentional absence of any object value or no value at all.
+
+                undefined: Undefined is a primitive value in JavaScript that represents the absence of a value or the uninitialized state of a variable.
+            </pre></p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" /> 
+          <div class="collapse-title text-xl font-medium">
+            What is REST API?
+          </div>
+          <div class="collapse-content"> 
+            <p><pre>
+                REST API,is an architectural style for designing networked applications. It is an approach to building web services that are lightweight,
+                scalable, and easy to maintain. REST is not a technology but a set of constraints and principles that define how web services should behave and
+                interact with each other.
+            </pre></p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
