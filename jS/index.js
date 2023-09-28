@@ -44,10 +44,61 @@ const handleLoadCard = async (categoryId) =>{
             `;
             cardContainer.appendChild(div);
         });
-
 }
 
 
-handleCategory();
 
+
+// const drawingData = async () =>{
+//     const drawing=await fetch('https://openapi.programming-hero.com/api/videos/category/1005');
+//     // const main_container=document.getElementById('main-container');
+//     // main_container.innerHTML='';
+//     drawing(drawing); 
+// }
+
+// const   drawing =async (drawing) => {
+//     const main_container=document.getElementById('main-container');
+//     main_container.innerHTML='';
+//    const drawingData=await  drawing.json();
+//    const arr=drawingData.data;
+//    if(arr.length===0){
+//     const drawing=document.getElementById('drawing');
+//     drawing.innerHTML=`
+//     <img src="logo.png" class="flex mx-auto">
+//     <h1 class="text-[#171717] text-4xl font-semibold text-center mt-4 mb-10">Oops!! Sorry, There is no <br>content here</h1>
+//     `;
+//    }
+// }
+
+
+
+
+
+// const sortByView = async() => {
+    
+//     const fetchCategory =async() =>{
+
+//         const response = await fetch("https://openapi.programming-hero.com/api/videos/categories");
+//     const data = await response.json();
+
+//         // console.log(data.data);
+//         data.data.forEach((element) => {
+//             // console.log(element.category_id);
+//             view(element.category_id);
+//             // console.log(element.category_id);
+
+//         });
+//     }
+
+//    const view = async(categoryId) => {
+//     const response2 = await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`);
+//     const data2 = await response.json();
+
+//     console.log(data);
+//    }
+// }
+
+
+
+handleCategory();
 handleLoadCard(1000);
